@@ -1,0 +1,28 @@
+.form {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.serverError {
+  padding: 12px 14px;
+  background: var(--danger-soft);
+  border: 1px solid #f0c9c8;
+  border-radius: var(--radius-sm);
+  color: var(--danger);
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-1);
+  padding-top: var(--space-1);
+  border-top: 1px solid var(--border);
+}
+
+.spacer {
+  flex: 1;
+}

@@ -1,0 +1,30 @@
+.head {
+  padding-bottom: var(--space-2);
+  border-bottom: 3px double var(--line);
+  margin-bottom: var(--space-3);
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: var(--space-1);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+.back:hover {
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.description {
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 13px;
+}

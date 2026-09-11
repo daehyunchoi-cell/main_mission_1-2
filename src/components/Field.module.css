@@ -1,0 +1,90 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+}
+
+.required {
+  color: var(--accent);
+  margin-left: 3px;
+}
+
+.error {
+  font-size: 13px;
+  color: var(--danger);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+/* 밑줄 입력 — 노트에 적는 느낌 */
+.control {
+  width: 100%;
+  padding: 8px 2px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--ink);
+  transition: border-color 0.15s;
+}
+
+.control:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+  border-bottom-width: 2px;
+  padding-bottom: 7px;
+}
+
+.control::placeholder {
+  color: var(--ink-faint);
+}
+
+.invalid {
+  border-bottom-color: var(--danger);
+}
+
+.invalid:focus {
+  border-bottom-color: var(--danger);
+}
+
+.textarea {
+  min-height: 150px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line);
+  resize: vertical;
+  line-height: 1.9;
+}
+
+.textarea:focus {
+  border-color: var(--accent);
+  border-width: 1px;
+  padding: 12px 14px;
+}
+
+.counter {
+  align-self: flex-end;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--ink-faint);
+}
+
+select.control {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%),
+    linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+  background-position: right 8px center, right 3px center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+}

@@ -1,0 +1,36 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding-bottom: 4px;
+}
+
+.star {
+  background: none;
+  border: none;
+  padding: 2px 3px;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--line);
+  transition: color 0.12s, transform 0.12s;
+}
+
+.star:hover {
+  transform: translateY(-2px);
+}
+
+.star:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.filled {
+  color: var(--accent);
+}
+
+.caption {
+  margin-left: 10px;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
