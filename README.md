@@ -4,6 +4,33 @@
 
 - **배포 URL**: https://main-mission-1-2.vercel.app/
 - **저장소**: https://github.com/daehyunchoi-cell/main_mission_1-2
+### 조회 (Read)
+
+| 목록 | 상세 |
+|---|---|
+| ![목록](docs/screenshots/01-list.png) | ![상세](docs/screenshots/02-detail.png) |
+
+### 등록 (Create)
+
+| 필수값 검증 | 등록 완료 |
+|---|---|
+| ![검증](docs/screenshots/03-create-validation.png) | ![등록 완료](docs/screenshots/04-create-done.png) |
+
+### 수정 (Update)
+
+![수정 완료](docs/screenshots/05-update-done.png)
+
+### 삭제 (Delete)
+
+| 삭제 확인 | 삭제 후 목록 |
+|---|---|
+| ![삭제 확인](docs/screenshots/06-delete-confirm.png) | ![삭제 후](docs/screenshots/07-delete-done.png) |
+
+### 네트워크 로그
+
+배포 환경에서 Supabase로 전송된 CRUD 요청입니다. GET(200) · POST(201) · PATCH(200) · DELETE(204)가 모두 성공했습니다.
+
+![네트워크 로그](docs/screenshots/08-network.png)
 
 ---
 
